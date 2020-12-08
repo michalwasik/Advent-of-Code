@@ -8,7 +8,7 @@ for group in test:
     diff_question = set(question for question in group)-{'\n'}
     anwser_1.append(len(diff_question))
     # part 2
-    sets_list = list(set(lettered) for lettered in(list(word) for word in group.split()))
+    sets_list = list(set(lettered) for lettered in (list(word) for word in group.split()))
     intersected = sets_list[0]
     for i in sets_list:
         intersected = set.intersection(intersected, i)
